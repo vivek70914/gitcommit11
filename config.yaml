@@ -1,0 +1,12 @@
+apiVersion: v2 
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: default
+spec:
+  data:
+    database.url: "jdbc:mysql://localhost:3306/mydb"
+    database.user: "admin"
+    app.name: "Vivek Pagi App"
+    app.environment: "production"
+    log.level: "INFO"
